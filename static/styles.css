@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: aliceblue;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+li, a, button{
+    text-decoration: none;
+    list-style: none;
+}
+.form-button{
+    background-color: cadetblue;
+    color: black;
+}
+.nav-bar{
+    position: relative;
+    width: 100%;
+    background-color: rgb(41, 41, 41);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-bar a{
+    padding: 20px;
+    display: inline-block;
+}
+.nav-bar a:hover{
+    background-color: darkcyan;
+}
