@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% if name %}
+<p>All the users</p>
+
+
+
+
+{% else %}
+
+    <h1>Create an acount</h1>
+    
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        {{ form.name.label }}
+        {{ form.name() }}
+        {{ form.email.label }}
+        {{ form.email() }}
+        {{ form.submit() }}
+
+    </form>
+<br><br><br>
+{% for our_user in our_users %}
+
+    {{ our_user.id }}
+    {{ our_user.name }}
+    {{ our_user.email }}
+    <br>
+
+{% endfor %}
+
+{% endif %}
+{% endblock %}
